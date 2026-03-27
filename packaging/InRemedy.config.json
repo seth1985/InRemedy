@@ -1,0 +1,4 @@
+{
+  "AppUrl": "http://127.0.0.1:5180",
+  "ConnectionString": "Host=127.0.0.1;Port=5433;Database=inremedy;Username=inremedy_app;Password=InRemedy!2026Local"
+}

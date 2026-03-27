@@ -1,0 +1,62 @@
+import type { FiltersState, GridColumn, GridState } from "./types";
+
+export const gridColumns: GridColumn[] = [
+  { key: "deviceName", label: "Device name", sidebarLabel: "DeviceName", filter: "text", width: "180px" },
+  { key: "remediationName", label: "Remediation name", sidebarLabel: "DisplayName", filter: "select", width: "220px" },
+  { key: "primaryUser", label: "User", sidebarLabel: "PrimaryUser", filter: "text", width: "190px" },
+  { key: "model", label: "Model", sidebarLabel: "Model", filter: "select", width: "230px" },
+  { key: "osVersion", label: "OS version", sidebarLabel: "OSVersion", filter: "select", width: "150px" },
+  { key: "status", label: "Remediation status", sidebarLabel: "RemediationStatus", filter: "select", width: "145px" },
+  { key: "outputCategory", label: "Detection status", sidebarLabel: "DetectionStatus", filter: "select", width: "145px" },
+  { key: "detectionScriptVersion", label: "Detection script status", sidebarLabel: "DetectionScriptStatus", filter: "select", width: "165px" },
+  { key: "remediationScriptVersion", label: "Remediation script status", sidebarLabel: "RemediationScriptStatus", filter: "select", width: "185px" },
+  { key: "detectionOutputRaw", label: "Pre-remediation detection output", sidebarLabel: "PreRemediationDetectionScriptOutput", filter: "select", width: "360px" },
+  { key: "errorCode", label: "Pre-remediation detection error", sidebarLabel: "PreRemediationDetectionScriptError", filter: "text", width: "240px" },
+  { key: "remediationOutputRaw", label: "Remediation output details", sidebarLabel: "RemediationScriptOutputDetails", filter: "select", width: "360px" },
+  { key: "errorSummary", label: "Remediation error details", sidebarLabel: "RemediationScriptErrorDetails", filter: "text", width: "360px" },
+  { key: "scriptVersion", label: "Post-remediation detection output", sidebarLabel: "PostRemediationDetectionScriptOutput", filter: "select", width: "260px" },
+  { key: "dataSource", label: "Post-remediation detection error", sidebarLabel: "PostRemediationDetectionScriptError", filter: "select", width: "250px" },
+  { key: "lastSyncDateTimeUtc", label: "Last agent update", sidebarLabel: "LastAgentUpdateTime", filter: "text", width: "180px" },
+  { key: "runTimestampUtc", label: "Run timestamp", sidebarLabel: "ModifiedTime", filter: "text", width: "170px" },
+  { key: "manufacturer", label: "Manufacturer", sidebarLabel: "Manufacturer", filter: "select", width: "130px" },
+  { key: "osBuild", label: "OS Build", sidebarLabel: "OsBuild", filter: "select", width: "100px" },
+  { key: "region", label: "Region", sidebarLabel: "Region", filter: "select", width: "96px" },
+  { key: "updateRing", label: "Update Ring", sidebarLabel: "UpdateRing", filter: "select", width: "120px" },
+  { key: "remediationCategory", label: "Category", sidebarLabel: "Category", filter: "select", width: "120px" },
+  { key: "platform", label: "Platform", sidebarLabel: "OSDescription", filter: "select", width: "110px" },
+];
+
+export const defaultFilters: FiltersState = {
+  search: "",
+  statuses: [],
+  models: [],
+  selectedRemediationIds: [],
+  selectedDeviceIds: [],
+};
+
+export const defaultGridState: GridState = {
+  visibleColumns: [
+    "deviceName",
+    "remediationName",
+    "primaryUser",
+    "model",
+    "osVersion",
+    "status",
+    "outputCategory",
+    "detectionScriptVersion",
+    "remediationScriptVersion",
+    "detectionOutputRaw",
+    "errorCode",
+    "remediationOutputRaw",
+    "errorSummary",
+    "scriptVersion",
+    "dataSource",
+    "lastSyncDateTimeUtc",
+    "runTimestampUtc",
+  ],
+  sortKey: "runTimestampUtc",
+  sortDirection: "desc",
+  columnFilters: {},
+  columnWidths: {},
+  derivedColumns: [],
+};
