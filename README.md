@@ -1,6 +1,7 @@
 # In-Remedy
 
 In-Remedy is a local remediation analysis workspace for Intune proactive remediation exports. It is built to help you import one or more Intune CSV or ZIP exports, review remediation results in a spreadsheet-like table, filter the data, adjust visible columns, and export the final result set.
+<img width="3837" height="1592" alt="image" src="https://github.com/user-attachments/assets/85f6c450-0ae9-4c6a-be23-50893df2050c" />
 
 ## What The App Does
 
